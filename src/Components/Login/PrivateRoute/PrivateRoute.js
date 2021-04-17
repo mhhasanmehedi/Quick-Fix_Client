@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import jwt_decode from "jwt-decode";
 import { UserContext } from '../../../App';
 
+
 const PrivateRoute = ({children, ...rest}) => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../../images/logo.jpg';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 import { UserContext } from '../../../App';
 
 const Header = () => {
