@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterCol = (props) => {
     return (
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-6 col-6">
             <h6>{props.menuTitle ? props.menuTitle : " "}</h6>
             <ul className="list-unstyled mt-4">
                  {

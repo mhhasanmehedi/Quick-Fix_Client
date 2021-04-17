@@ -38,7 +38,7 @@ const Header = () => {
                             <a className="nav-link mr-4" href="#">Contact Us</a>
                         </li>
                         <li className="nav-item">
-                            <button className="btn btn-success"><Link to="/login" style={{ textDecoration: 'none', color: '#000' }}>{loggedInUser.name || 'Login'}</Link></button>
+                            <button className="btn btn-success"><Link to="/login" style={{ textDecoration: 'none', color: 'orange' }}>{loggedInUser.name || 'Login'}</Link></button>
                         </li>
                     </ul>
                 </div>

@@ -1,8 +1,15 @@
-.single-analysis-box{
+.single-analysis-box {
     background-color: orange;
     transform: translateY(-202px);
 }
-.single-analysis-box .content-box{
+
+.single-analysis-box .content-box {
     padding: 15px;
     border-top: 2px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    .single-analysis-box {
+        margin-top: 30px;
+    }
 }

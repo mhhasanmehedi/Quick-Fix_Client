@@ -23,3 +23,9 @@
     color: orange;
     border-color: orange;
 }
+
+@media only screen and (max-width: 768px) {
+    .single-team-box {
+        margin-top: 30px;
+    }
+}
