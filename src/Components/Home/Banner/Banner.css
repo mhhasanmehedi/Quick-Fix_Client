@@ -1,0 +1,19 @@
+.banner{
+    background-image: url('../../../images/bannerBg.jpg');
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    font-size: 60px;
+    font-weight: 900;
+
+}
+.banner span{
+    color: orange;
+}

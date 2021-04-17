@@ -1,0 +1,8 @@
+.single-analysis-box{
+    background-color: orange;
+    transform: translateY(-202px);
+}
+.single-analysis-box .content-box{
+    padding: 15px;
+    border-top: 2px solid black;
+}

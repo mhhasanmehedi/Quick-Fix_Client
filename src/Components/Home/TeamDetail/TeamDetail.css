@@ -1,0 +1,25 @@
+.single-team-box{
+    border: 1px solid orange;
+    padding: 20px;
+}
+.team img{
+    border-radius: 50%;
+    box-shadow: inset 3px 4px 5px #c1c1d7;
+}
+
+.social-link a{
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .8s;
+}
+.social-link a:hover{
+    transform: rotate(360deg);
+    color: orange;
+    border-color: orange;
+}
