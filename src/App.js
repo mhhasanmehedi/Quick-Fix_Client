@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Admin from "./Components/Admin/Admin";
+import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
 import Home from "./Components/Home/Home/Home";
 import Login from "./Components/Login/Login/Login";
 import PrivateRoute from "./Components/Login/PrivateRoute/PrivateRoute";
@@ -21,8 +21,8 @@ function App() {
           <Route path="/home">
             <Home/>
           </Route>
-          <PrivateRoute path="/admin">
-            <Admin/>
+          <PrivateRoute path="/dashboard">
+            <Dashboard/>
           </PrivateRoute>
           <Route path="/login">
             <Login/>
