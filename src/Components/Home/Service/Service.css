@@ -1,3 +1,30 @@
 .service{    
     transform: translateY(-202px);
 }
+.head-title{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+.head-title::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 115px;
+    left: 505px;
+    border-radius: 50px;
+    bottom: -7px;
+    background: #FFA500;
+}
+.head-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    left: 515px;
+    border-radius: 50px;
+    bottom: -13px;
+    background: #FFA500;
+}

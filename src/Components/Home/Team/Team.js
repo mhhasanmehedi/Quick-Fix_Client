@@ -36,10 +36,7 @@ const Team = () => {
     return (
         <section className="team text-center">
             <div className="container">
-                <div className="mb-5">
-                    <h2 className="text-uppercase">Our <span className="text-warning">Experts</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem <br />voluptatem obcaecati!</p>
-                </div>
+                <h2 className="head-title">Our Experts</h2>
                 <div className="row">
                     {
                         teamData.map(team => <TeamDetail team={team} key={team.name} />)

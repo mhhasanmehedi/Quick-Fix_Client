@@ -1,5 +1,5 @@
 .single-review-box {
-    height: 250px;
+    height: 200px;
     width: 100%;
     background-color: orange;
     margin-top: 70px;
@@ -7,7 +7,7 @@
 }
 
 .single-review-box:hover {
-    box-shadow: 0 9px 12px -4px grey;
+    box-shadow: 0 19px 27px -13px grey;
 }
 
 .single-review-box img {

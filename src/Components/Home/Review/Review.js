@@ -1,40 +1,27 @@
-import React from 'react';
-import paxton from '../../../images/Paxton.jpg';
-import isabella from '../../../images/Isabella..jpg';
-import brian from '../../../images/Brian.jpg';
+import React, { useEffect, useState } from 'react';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
 import './Review.css';
+import loader from '../../../images/loader.gif';
 
-const reviewData = [
-    {
-        name: "Paxton",
-        img: paxton,
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ipsum earum officia accusantium aspernatur dolore asperior!"
-    },
-    {
-        name: "Isabella.",
-        img: isabella,
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ipsum earum officia accusantium aspernatur dolore asperior!"
-    },
-    {
-        name: "Brian",
-        img: brian,
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ipsum earum officia accusantium aspernatur dolore asperior!"
-
-    }
-
-]
 
 const Review = () => {
+    const [reviews, setReviews] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
+
     return (
-        <section className="container review mb-5 pb-5">
-            <div className="text-center">
-                <h2 className="text-uppercase">Customer <span className="text-warning">Review</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem <br/> voluptatem obcaecati!</p>
-            </div>
+        <section className="container mb-5 pb-5">
+            <h2 className="head-title">Customer Review</h2>
             <div className="row">
                 {
-                    reviewData.map(review => <ReviewDetail review={review} key={review.name}/>)
+                    reviews.length > 0 ?
+                        reviews.map(review => <ReviewDetail review={review} key={review.name} />)
+                        :
+                        <img src={loader} style={{ margin: 'auto', height: '200px' }} alt="" />
                 }
             </div>
         </section>

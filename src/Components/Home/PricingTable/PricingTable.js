@@ -10,7 +10,7 @@ const pricingTableData = [
         item2: '1 Laptop Repair',
         item3: '1 Phone Repair',
         item4: 'Free Supports',
-        color: 'success'
+        theme: 'theme-1'
     },
     {
         name: 'Premium Services',
@@ -19,7 +19,7 @@ const pricingTableData = [
         item2: '2 Laptop Repair',
         item3: '2 Phone Repair',
         item4: 'Free Supports',
-        color: 'primary'
+        theme: 'theme-2'
     },
     {
         name: 'Standard Services',
@@ -28,7 +28,7 @@ const pricingTableData = [
         item2: '3 Laptop Repair',
         item3: '3 Phone Repair',
         item4: 'Free Supports',
-        color: 'warning'
+        theme: 'theme-3'
     }
 ]
 
@@ -36,8 +36,7 @@ const PriceTable = () => {
     return (
         <section className="pricingTable container">
             <div className="text-center mt-4 mb-5">
-                <h2 className="text-uppercase">Pricing <span className="text-warning">Table</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem <br/> voluptatem obcaecati!</p>
+                <h2 className="head-title">Pricing Table</h2>
             </div>
             <div className="row">
                 {

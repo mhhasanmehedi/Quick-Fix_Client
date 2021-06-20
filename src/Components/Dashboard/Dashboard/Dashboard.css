@@ -1,0 +1,7 @@
+.userBox{
+    transition: .6s;
+    width: 400px;
+}
+.userBox:hover{
+    transform: scale(1.1);
+}

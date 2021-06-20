@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav .nav-link{
+    color: black!important;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    background-color: #aaaaaa3d;
+}
+
+.logo span{
+    font-size: 20px;
+    padding-left: 5px;
+    font-style: oblique;
+}

@@ -7,8 +7,8 @@ const Banner = () => {
             <div className="container">
                 <h1>We Make <span>computers</span><br /> work for you.</h1>
                 <p>We provide always oru best services for our clients and always <br /> try to achieve our client's trust and satisfaction.</p>
-                <button className="btn btn-success mr-3">Read More</button>
-                <button className="btn btn-success">Register Now</button>
+                <button className="btn-grad mr-3">Read More</button>
+                <button className="btn-grad">Register Now</button>
             </div>
         </section>
     );

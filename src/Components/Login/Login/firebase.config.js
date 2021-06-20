@@ -1,10 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBnp04dDfeyjsFTGVp2we2fYQD981tjYFA",
-  authDomain: "quick-fix-74e46.firebaseapp.com",
-  projectId: "quick-fix-74e46",
-  storageBucket: "quick-fix-74e46.appspot.com",
-  messagingSenderId: "72580695158",
-  appId: "1:72580695158:web:d1bdad147a02ab3e694b57"
+  apiKey: "AIzaSyBESojS5SLrcOoPjgS9W-zaChHo0qTOC_E",
+  authDomain: "quickfixsp-1ceb5.firebaseapp.com",
+  projectId: "quickfixsp-1ceb5",
+  storageBucket: "quickfixsp-1ceb5.appspot.com",
+  messagingSenderId: "225082562640",
+  appId: "1:225082562640:web:5772e2de02960ae495d955"
 };
-
 export default firebaseConfig;

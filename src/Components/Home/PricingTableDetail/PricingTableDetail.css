@@ -1,32 +1,98 @@
-.single-pricing-box {
-    border-radius: 30px 0 0 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    padding-bottom: 20px;
+.single-pricing-item {
+    box-shadow: 0 0 9px #ccc;
+    padding: 30px;
+    border-top: 4px solid #2DC795;
+    text-align: center;
     transition: .3s;
 }
 
-.single-pricing-box:hover{
-    transform: translateY(-10px);
+.pricing-price {
+    background: #2DC795;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
 }
 
-.single-pricing-box h2 {
-    border-radius: 30px 0 30px 0;
-}
-
-.single-pricing-box p{
-    font-size: 20px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.price {
-    font-size: 50px;
+p.pricing-price-text {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 22px;
     text-align: center;
-    font-weight: lighter;
 }
 
-@media only screen and (max-width: 768px) {
-    .single-pricing-box {
-        margin-top: 30px;
-    }
+.pricing-price:after {
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    height: 110%;
+    width: 110%;
+    content: "";
+    border: 3px solid #2DC795;
+    border-radius: 50%;
+}
+
+.pricing-content {
+    font-size: 16px;
+    color: #6B6B6B;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.bordered-btn, .boxed-btn {
+    display: inline-block;
+    border: 2px solid #2DC795;
+    color: #2DC795;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 22px;
+    letter-spacing: 1px;
+}
+
+.boxed-btn {
+    background-color: #FD5F38;
+    color: #fff;
+    border-color: #FD5F38;
+}
+
+.single-pricing-item:hover {
+    transform: scale(1.05);
+}
+
+.bordered-btn:hover {
+    color: #2DC795;
+}
+
+.boxed-btn:hover {
+    color: #fff;
+}
+
+.single-pricing-item.theme-2 {
+    border-color: #FD5F38;
+}
+
+.theme-2 .pricing-price {
+    background-color: #FD5F38;
+}
+
+.theme-2 .pricing-price:after {
+    border-color: #FD5F38;
+}
+
+.theme-3 .pricing-price {
+    background-color: #B378F9;
+}
+
+.theme-3 .pricing-price:after {
+    border-color: #B378F9;
 }

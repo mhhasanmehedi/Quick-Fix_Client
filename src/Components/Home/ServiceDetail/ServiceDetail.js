@@ -1,19 +1,22 @@
 import React from 'react';
 import './ServiceDetail.css';
+import {Link} from "react-router-dom";
 
-const ServiceDetail = (props) => {
-    const { name, description, img, price } = props.service;
+const ServiceDetail = ({ service }) => {
+    const { serviceName, description, imageURL, price, _id } = service;
     return (
         <div className="col-md-4">
             <div className="single-service-box">
                 <div className="service-img">
-                    <img width="100%" height="220px" src={img} alt="" />
+                    <img width="100%" height="220px" src={imageURL} alt="" />
                 </div>
                 <div className="service-content">
-                    <h4>{name}</h4>
+                    <h4>{serviceName}</h4>
                     <p>{description}</p>
                     <div className="d-flex align-items-center justify-content-between">
-                        <button className="btn btn-success">Get Service</button>
+                        <Link to={`/order/${_id}`}>
+                            <button className="btn-grad">Get Service</button>
+                        </Link>
                         <h5 className="text-warning">${price}</h5>
                     </div>
                 </div>
