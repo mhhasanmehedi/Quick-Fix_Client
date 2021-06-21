@@ -35,7 +35,7 @@ const Sidebar = () => {
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://mighty-chamber-70734.herokuapp.com/isAdmin', {
             method: "POST",
             headers: { 'Content-Type': 'Application/json' },
             body: JSON.stringify({ email: loggedInUser.email })

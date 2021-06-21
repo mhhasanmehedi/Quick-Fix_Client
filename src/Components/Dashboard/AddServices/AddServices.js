@@ -20,7 +20,7 @@ const AddServices = () => {
             imageURL: imageURL
         };
         console.log(eventData);
-        fetch(`http://localhost:5000/addService`, {
+        fetch(`https://mighty-chamber-70734.herokuapp.com/addService`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         const reviewData = { ...data, ...loggedInUser };
-        fetch(`http://localhost:5000/addReview`, {
+        fetch(`https://mighty-chamber-70734.herokuapp.com/addReview`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

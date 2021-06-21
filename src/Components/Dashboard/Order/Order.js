@@ -16,7 +16,7 @@ const Order = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
     useEffect(() => {
-        const url = ` http://localhost:5000/services/${id}`
+        const url = ` https://mighty-chamber-70734.herokuapp.com/services/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrderCheckout(data))
@@ -32,7 +32,7 @@ const Order = () => {
         delete newOrder._id
         delete newOrder.image
         console.log(newOrder);
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://mighty-chamber-70734.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json'

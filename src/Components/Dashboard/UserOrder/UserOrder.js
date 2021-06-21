@@ -9,7 +9,7 @@ const UserOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/order?email='+loggedInUser.email, {
+        fetch('https://mighty-chamber-70734.herokuapp.com/order?email='+loggedInUser.email, {
             headers: { 'Content-Type': 'Application/json' },
             body: JSON.stringify()
         })

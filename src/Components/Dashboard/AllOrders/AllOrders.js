@@ -7,7 +7,7 @@ const AllOrders = () => {
     const [Orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders', {
+        fetch('https://mighty-chamber-70734.herokuapp.com/allOrders', {
             headers: {
                 'Content-Type': 'Application/json'
             },

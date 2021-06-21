@@ -7,7 +7,7 @@ const AdminSingleOrder = ({ order, index }) => {
     const [pending, setPending] = useState(order.status === 'pending')
 
     const handleStatus = (e) => {
-        fetch('http://localhost:5000/updateStatus', {
+        fetch('https://mighty-chamber-70734.herokuapp.com/updateStatus', {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

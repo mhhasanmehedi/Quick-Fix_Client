@@ -16,7 +16,7 @@ const AddAdmin = () => {
         const admin = {
             email: data.email,
         }
-        const url = 'http://localhost:5000/addAdmin'
+        const url = 'https://mighty-chamber-70734.herokuapp.com/addAdmin'
         fetch(url, {
             method: 'POST',
             headers: {
