@@ -1,5 +1,5 @@
 .single-review-box {
-    height: 200px;
+    height: 230px;
     width: 100%;
     background-color: orange;
     margin-top: 70px;
@@ -16,4 +16,19 @@
     border-radius: 100%;
     margin-top: -45px;
     margin-bottom: 30px;
+}
+
+.scrollBar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.scrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollBar {
+    height: 80px;
+    width: 100%;
 }
