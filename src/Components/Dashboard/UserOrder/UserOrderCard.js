@@ -13,9 +13,21 @@ const UserOrderCard = ({ order }) => {
                     <p>Payment ID: {paymentId}</p>
                 </div>
                 <div>
-                    <span className="bg-white p-3 text-muted border">
-                        {status}
-                    </span>
+                    {
+                        status === "Done" && <span className="bg-success p-3 text-white border">
+                            {status}
+                        </span>
+                    }
+                    {
+                        status === "On Going" && <span className="bg-info p-3 text-white border">
+                            {status}
+                        </span>
+                    }
+                    {
+                        status === "pending" && <span className="bg-warning p-3 text-white border">
+                            {status}
+                        </span>
+                    }
                 </div>
             </div>
         </div>

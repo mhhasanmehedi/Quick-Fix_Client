@@ -39,9 +39,6 @@ const SimpleCardForm = ({ handleOrder }) => {
                 {
                     paymentError && <p className="text-danger text-center "> {paymentError} </p>
                 }
-                {
-                    paymentSuccess && <p className="text-success text-center "> We Received Your Payment  Successfully </p>
-                }
             </div>
         </>
     );

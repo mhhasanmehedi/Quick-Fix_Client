@@ -1,14 +1,16 @@
-.service{    
+.service {
     transform: translateY(-202px);
 }
-.head-title{
+
+.head-title {
     text-align: center;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 60px;
 }
-.head-title::before{
+
+.head-title::before {
     content: "";
     position: absolute;
     height: 4px;
@@ -18,7 +20,8 @@
     bottom: -7px;
     background: #FFA500;
 }
-.head-title::after{
+
+.head-title::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -27,4 +30,13 @@
     border-radius: 50px;
     bottom: -13px;
     background: #FFA500;
+}
+
+@media only screen and (max-width: 600px) {
+    .head-title::before {
+        left: 100px;
+    }
+    .head-title::after {
+        left: 110px;
+    }
 }

@@ -96,3 +96,10 @@ p.pricing-price-text {
 .theme-3 .pricing-price:after {
     border-color: #B378F9;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .single-pricing-item{
+        margin-top: 20px;
+    }
+}
