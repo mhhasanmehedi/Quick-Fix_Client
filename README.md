@@ -1,7 +1,7 @@
 # **Quick Fix**
 
 
-<a  href="https://my-gerez.web.app/">
+<a  href="https://dazzling-northcutt-396485.netlify.app/">
 <img  width="100%"  height="100%"  src="https://i.ibb.co/fNs2cpS/screenshot-localhost-3000-2021-06-21-00-05-17.png"/>
 </a>
 
@@ -10,6 +10,7 @@
 - **React-Bootstrap**
 - **CSS3**
 - **Firebase Authentication**
+- **React Hook Form**
 
 
 ### Back-end Technology : 
@@ -17,9 +18,9 @@
 - **Express**
 - **MongoDB**
 
-### `Website Link :` [https://my-gerez.web.app](https://my-gerez.web.app)
+### `Website Link :` [https://dazzling-northcutt-396485.netlify.app/](https://dazzling-northcutt-396485.netlify.app/)
 
 <hr/>
 
-**[Back-end Repository](https://github.com/SohelIslamImran/gerez-server)**
+**[Back-end Repository](https://github.com/Porgramming-Hero-web-course/complete-website-server-mhhasanmehedi)**
 <hr/>
